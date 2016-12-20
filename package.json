@@ -1,0 +1,22 @@
+{
+  "name": "micro-method-router",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamo/micro-method-router.git"
+  },
+  "author": "Jarmo Isotalo <jarmo@isotalo.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamo/micro-method-router/issues"
+  },
+  "homepage": "https://github.com/jamo/micro-method-router#readme",
+  "devDependencies": {
+    "micro": "6.1.0"
+  }
+}
