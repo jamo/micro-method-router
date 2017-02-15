@@ -1,7 +1,7 @@
 module.exports = exports = function (map) {
   const allowed_verbs = Object.keys(map).map(v => v.toUpperCase()).join(', ')
 
-  return (req, res) => {
+  return (req, res, ...args) => {
     res.setHeader('Access-Control-Request-Method', allowed_verbs)
     const {method} = req
     const fn = map[method.toLowerCase()]
@@ -10,6 +10,6 @@ module.exports = exports = function (map) {
       res.end('Method Not Allowed')
       return
     }
-    return fn(req, res)
+    return fn(req, res, ...args)
   }
 }
